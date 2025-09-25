@@ -4,15 +4,15 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/health')
+@app.route('3.249.94.36/health')
 def health_check():
     return jsonify(status="ok"), 200
 
-@app.route('/data')
+@app.route('3.249.94.36/data')
 def get_data():
     return jsonify(message="Yo this is tesa")
 
-@app.route('/user')
+@app.route('3.249.94.36/user')
 def get_user():
     return jsonify(message="We are the best cloud engineers in the world")
 
